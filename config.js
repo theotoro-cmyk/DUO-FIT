@@ -1,3 +1,5 @@
-// Seulement l'URL du projet et sa clé PUBLIQUE publishable (ou anon).
-// Ne jamais insérer de clé secret / service_role, mot de passe ou jeton.
-window.DUOFIT_CONFIG = { supabaseUrl: '', supabaseKey: '' };
+// Configuration publique MoniToro. Aucune clé secrète.
+window.DUOFIT_CONFIG = {
+  supabaseUrl: 'https://dpdgsflncvhvingspwfq.supabase.co',
+  supabaseKey: 'sb_publishable_hC679o3NVBRBeReFRPzY0A_EU3MYhJX'
+};
