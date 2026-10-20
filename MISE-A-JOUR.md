@@ -1,4 +1,4 @@
-# MoniToro — cartes et exercices au rack
+# MoniToro — haut d’écran compact
 
 ## Mettre à jour
 
@@ -7,6 +7,8 @@
 3. Attendre le succès Pages dans Actions, puis recharger Safari. Ne pas effacer les données du site.
 
 ## Nouveautés
+
+- Bandeau de présentation retiré et marges hautes réduites pour accéder directement aux profils et aux exercices.
 
 - Développé couché au rack et Squat au rack sont deux exercices sélectionnables, avec saisie de performances, suggestions et rapports distincts des versions classiques. Le champ de commentaire « réglage du rack » est retiré.
 - Toucher l’un des quatre emplacements ouvre une bibliothèque de cartes d’exercices. Un mouvement déjà placé est désactivé pour éviter les doublons. Un emplacement peut rester vide.
