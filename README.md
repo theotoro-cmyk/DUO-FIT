@@ -1,11 +1,5 @@
-# DUO FIT V3
+# MoniToro
 
-Commencer par **CONFIGURATION.md** : essai local, configuration Supabase, comptes, RLS, sauvegardes et mise à jour GitHub Pages.
+Dernière identité : logo bleu électrique et cornes en courbes continues.
 
-- Application : `index.html` et ses fichiers voisins. Aucun build nécessaire.
-- Configuration publique : `config.js` (mode local tant qu'il est vide).
-- Installation base : `supabase.sql`.
-- Tests des permissions à exécuter dans un projet de test : `rls-tests.sql`.
-- Vérifications et limites : `VERIFICATION.md`.
-
-Ne publier aucune clé secrète. La synchronisation et la persistance multi-appareils sont assurées par Supabase après configuration, pas par GitHub Pages.
+Commencer par MISE-A-JOUR.md pour une mise à jour, ou CONFIGURATION.md pour installer Supabase. Ne pas écraser config.js existant. Le ZIP de mise à jour contient son modèle config.example.js uniquement.

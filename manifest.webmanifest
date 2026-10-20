@@ -1,1 +1,1 @@
-{"name":"DUO FIT V3","short_name":"DUO FIT","start_url":"./","scope":"./","display":"standalone","background_color":"#f5f3ec","theme_color":"#111915","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]}
+{"name": "MoniToro", "short_name": "MoniToro", "start_url": "./", "scope": "./", "display": "standalone", "background_color": "#f3f6f9", "theme_color": "#172535", "icons": [{"src": "icon.svg?v=blue-2", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]}

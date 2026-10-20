@@ -1,4 +1,4 @@
-# DUO FIT V3 — installation et mise à jour
+# MoniToro (base V3) — installation et mise à jour
 
 ## Ce qui est livré
 
