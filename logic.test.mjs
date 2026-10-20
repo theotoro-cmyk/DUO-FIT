@@ -24,4 +24,7 @@ assert.equal(validLog({...row,movement:1,rack:'8'}),false);
 assert.equal(validLog({...row,movement:5,variant:'Développé debout'}),true);
 assert.equal(validLog({...row,movement:5,variant:'Inconnu'}),false);
 assert.equal(validLog({...row,variant:'Développé debout'}),false);
-console.log('23 vérifications métier réussies.');
+assert.equal(validLog({...row,variant:'Développé couché au rack'}),true);
+assert.equal(validLog({...row,movement:4,variant:'Squat au rack'}),true);
+assert.equal(validLog({...row,movement:4,variant:'Développé couché au rack'}),false);
+console.log('26 vérifications métier réussies.');

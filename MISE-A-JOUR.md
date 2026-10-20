@@ -1,19 +1,21 @@
-# MoniToro — séance à quatre exercices
+# MoniToro — cartes et exercices au rack
 
-## Mise à jour
+## Mettre à jour
 
-1. Si Supabase est déjà configuré : exécuter seulement migration-rack-epaules.sql dans SQL Editor AVANT de publier les fichiers. Il ajoute rack et variant sans effacer les résultats et conserve les règles RLS. Ne pas relancer supabase.sql sur un projet existant. En mode local, aucune opération SQL nécessaire.
-2. Décompresser le ZIP. Charger les fichiers à la racine du dépôt GitHub puis Commit changes. Conserver config.js actuel, exclu de ce ZIP. config.example.js est un modèle uniquement.
-3. Attendre le déploiement réussi dans Actions, puis recharger le site Safari. Ne pas effacer ses données.
+1. Si Supabase est actif, exécuter migration-rack-exercices.sql dans SQL Editor avant publication. Compatible avec une base V3 d’origine ou la migration précédente. Il ajoute les colonnes manquantes et élargit la liste des variantes, sans effacer les résultats. Ne pas relancer supabase.sql sur un projet existant.
+2. Décompresser le ZIP. Charger son contenu directement à la racine du dépôt GitHub puis Commit changes. Conserver config.js actuel (exclu du ZIP). config.example.js est un modèle uniquement.
+3. Attendre le succès Pages dans Actions, puis recharger Safari. Ne pas effacer les données du site.
 
-## Modifications
+## Nouveautés
 
-- Quatre emplacements de choix d'exercices remplacent le bandeau noir. Seules les fiches choisies apparaissent. Chaque emplacement peut être laissé vide ; un même exercice ne peut être sélectionné deux fois. Les quatre variantes d'épaules sont des choix distincts.
-- Choix disponibles : développé couché, tractions, dips, soulevé de terre, squat, développé militaire haltères, développé debout, élévations haltères, élévations poulie.
-- Rack pour développé couché et squat : texte facultatif pour hauteur des crochets et sécurités, mémorisé avec le résultat ; dernier réglage proposé à la prochaine saisie. Le journal affiche ce réglage. Ce champ ne représente pas une charge supplémentaire.
-- Rapports et suggestions séparés par variante d'épaules. Dans Rapports, choisir le mouvement Épaules puis la variante. Les anciennes séances restent sous « variante non précisée », sans attribution arbitraire.
-- NANA et TOMTOM plus grands. Suppression des flèches et symboles décoratifs.
+- Développé couché au rack et Squat au rack sont deux exercices sélectionnables, avec saisie de performances, suggestions et rapports distincts des versions classiques. Le champ de commentaire « réglage du rack » est retiré.
+- Toucher l’un des quatre emplacements ouvre une bibliothèque de cartes d’exercices. Un mouvement déjà placé est désactivé pour éviter les doublons. Un emplacement peut rester vide.
+- NANA prend le bleu du logo (#3554EC) ; TOMTOM reste vert.
+- Les noms longs se répartissent sur plusieurs lignes, avec un équilibre sur deux lignes lorsque la largeur le permet, sans supprimer de mots.
+- Les quatre variantes d’épaules restent disponibles séparément.
 
-Les choix des quatre emplacements sont conservés sur cet appareil par profil/date/module. Ils ne sont pas synchronisés ; les performances, variantes et réglages de rack le sont via Supabase après migration. Une autre sélection ne supprime aucun résultat. Tables, clés de stockage des performances et comptes existants sont conservés.
+Dans Rapports : sélectionner Développé couché ou Squat, puis la variante au rack. Les anciennes performances restent dans Version classique : un ancien commentaire rack ne permet pas de déduire l’exercice pratiqué et n’est pas converti automatiquement. Ces commentaires historiques restent conservés dans les données et visibles dans le journal.
 
-Validation : 23 assertions métier et 9 vérifications de rendu via DOM simulé réussies. Vérification visuelle Safari et exécution de la migration contre votre Supabase restent à effectuer. Aucun déploiement effectué ici.
+Les choix des quatre emplacements restent propres à chaque appareil et profil/date/module. Les performances et variantes se synchronisent via Supabase après migration. Cette mise à jour ne change pas les comptes, les droits ni le stockage existant.
+
+Validation : 26 assertions métier et 12 vérifications de rendu avec DOM simulé réussies. Pas de vérification visuelle Safari ni de migration exécutée contre un projet réel. Aucun déploiement effectué ici.

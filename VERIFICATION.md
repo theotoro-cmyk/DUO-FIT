@@ -1,5 +1,5 @@
 # Vérification
 
-23 assertions métier réussies : semaines, suggestions, estimations, validation des données, racks et variantes.
-9 vérifications via DOM simulé réussies : quatre emplacements, fiches conditionnelles, retrait du bandeau noir, champs rack, variantes distinctes dans les rapports.
-Syntaxe JavaScript vérifiée. Pas de test visuel Safari ni de projet Supabase réel disponible ; migration fournie à exécuter avant publication en mode partagé.
+26 assertions métier réussies : semaines, suggestions, estimations, validation des résultats, racks et variantes.
+12 vérifications avec DOM simulé réussies : quatre emplacements, fiches conditionnelles, retrait du bandeau, absence du champ rack, sélection des variantes et séparation des résultats.
+Syntaxe JavaScript vérifiée. Rendu Safari, interactions tactiles réelles et connexion Supabase restent à valider. Migration fournie avant publication en mode partagé.
