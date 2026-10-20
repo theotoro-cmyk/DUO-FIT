@@ -19,4 +19,9 @@ assert.deepEqual(weekly([row,{...row,kg:50},{...row,date:'2025-01-06',kg:42}]).m
 assert.equal(weekly([{...row,kind:'lest'}])[0].rm,null);
 assert.equal(suggestion([row,{...row,date:'2025-01-04',kg:50}],'2025-01-08').kg,50);
 assert.equal(week('2026-01-01'),'2025-12-29');
-console.log('18 vérifications métier réussies.');
+assert.equal(validLog({...row,rack:'Crochets 8'}),true);
+assert.equal(validLog({...row,movement:1,rack:'8'}),false);
+assert.equal(validLog({...row,movement:5,variant:'Développé debout'}),true);
+assert.equal(validLog({...row,movement:5,variant:'Inconnu'}),false);
+assert.equal(validLog({...row,variant:'Développé debout'}),false);
+console.log('23 vérifications métier réussies.');

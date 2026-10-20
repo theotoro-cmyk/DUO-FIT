@@ -7,3 +7,6 @@
 
 /* Identité MoniToro finale : bleu électrique. */
 .brand{color:#3554ec}.brand span,.brand b{color:inherit}
+/* Choix de séance : quatre emplacements, fiches conditionnelles. */
+.session-slots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0 24px}.session-slot{min-width:0;aspect-ratio:1.2;background:#fff;border:1px solid #dce4ec;border-radius:14px;padding:16px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 3px 12px #17253504}.session-slot>span{font-size:10px;letter-spacing:1px;color:#637b91}.session-slot select{font-size:13px;min-width:0;background:#f2f5ff;border-color:#d4ddfb;color:#253f9a}.profiles span{font-size:21px;letter-spacing:.5px}.profiles small{font-size:11px}.profiles .avatar{font-size:23px}.close{font-size:13px;border:1px solid #dce4ec;border-radius:8px;padding:8px 12px} .status:before,.card .number:before{content:none}
+@media(max-width:600px){.session-slots{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.session-slot{padding:14px;aspect-ratio:1.4}.session-slot select{font-size:16px}.profiles span{font-size:19px}.profiles small{font-size:10px}.profiles .avatar{font-size:21px}}
