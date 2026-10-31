@@ -41,3 +41,77 @@ nav button.active{box-shadow:inset 0 -3px 0 var(--accent),0 2px 7px #1725350c}.m
 
 /* Deux onglets et noms d’exercices plus affirmés. */
 .session-slot strong,.exercise-choice strong{font-family:'DM Sans',sans-serif;font-weight:800;letter-spacing:-.15px}
+
+/* Parapluie : identité violette, contraste clair sur les boutons. */
+:root{--accent:#7c3aed!important;--soft:#f2ebff!important;--line:#e4dcf0}
+body{background:radial-gradient(ellipse at 90% 0,#eee3ff 0,transparent 40%),#f7f5fb}
+.brand,.brand span,.brand b{color:#7c3aed}.brand{cursor:pointer}
+h1 em,.compact-tagline em{color:#7c3aed}
+.profiles button[data-profile=NANA]{--p:#7c3aed;--bg:#f2ebff;--av:#e6d7ff}
+.profiles button[data-profile=TOMTOM]{--p:#6d28d9;--bg:#f1e9ff;--av:#e2d0ff}
+.card .primary,.modes button.active{background:#7c3aed;color:#fff}
+.primary{background:#6d28d9;color:#fff}
+nav button.active{color:#5b21b6}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline-color:#a78bfa}
+.compact-tagline{white-space:normal;text-wrap:balance}
+.footer #umbrellaSecret{background:transparent;border:0;color:#7c3aed;font-size:24px;padding:0 8px;min-width:44px;min-height:44px;line-height:1;cursor:pointer}
+.footer{align-items:center}
+#banterDialog{width:min(420px,calc(100% - 28px));background:#faf7ff;color:#35204e;padding:28px}
+#banterDialog::backdrop{background:#24103899;backdrop-filter:blur(4px)}
+#banterDialog .banter-icon{font-size:42px;color:#7c3aed;margin:8px 0 18px}
+#banterDialog h2{font-size:24px;line-height:1.2;color:#5b21b6}
+#banterDialog p{font-size:16px;line-height:1.65;color:#4b365f}
+#banterDialog .banter-note{font-size:11px;color:#796786}
+#banterDialog .banter-close{float:right;background:white;border:1px solid #e1d4f1;border-radius:10px;color:#5b21b6;padding:8px 12px}
+
+/* Parapluie · nouveau club violet. */
+:root{color:#2d2140;--line:#e7def0}
+body{background:#f7f5fb;color:#2d2140}
+.shell{max-width:1080px;padding:0 40px}
+header{height:98px;border-bottom:0}
+.brand{font-family:'Space Grotesk',sans-serif;gap:12px}
+.brand img{width:52px;height:52px;border-radius:15px;box-shadow:none}
+.brand span{font-size:36px;letter-spacing:-1.7px;font-weight:400}
+.brand b{font-weight:700}.brand small{font-size:7px;letter-spacing:2.6px;color:#9a86b1}
+header .quiet{border-color:#e2d7ee;color:#6d28d9;background:transparent;box-shadow:none;font-size:11px;font-weight:600;padding:10px 17px;border-radius:11px}
+.club-hero{position:relative;overflow:hidden;padding:34px 38px 31px;border-radius:25px;background:#6d28d9;color:white;margin:5px 0 29px;min-height:225px}
+.club-kicker{font-size:9px;letter-spacing:3px;color:#dcc9ff;font-weight:700;margin-bottom:18px}
+.club-hero .compact-tagline{position:relative;z-index:1;color:white;font-size:46px;line-height:1.06;letter-spacing:-2px;margin:0;font-weight:600;white-space:normal}
+.club-hero .compact-tagline em{color:#ddc7ff;font-style:normal}
+.club-hero p{position:relative;z-index:1;color:#e0ccff;font-size:12px;margin:18px 0 0;max-width:70%}
+.hero-umbrella{position:absolute;right:105px;top:-38px;font:280px/1 Arial,sans-serif;color:#ffffff13;transform:rotate(-17deg);pointer-events:none}
+.club-stamp{position:absolute;right:33px;bottom:30px;font-size:8px;line-height:1.8;letter-spacing:2px;text-align:right;color:#dfcaff}
+.profile-caption{font-size:9px;letter-spacing:2px;color:#8e7a9f;font-weight:700;margin-bottom:10px}
+.status{color:#95839f;font-size:10px;margin:0 0 12px;line-height:1.6}
+.profiles{background:#eee7f6;border-radius:15px;padding:5px;gap:5px;max-width:100%}
+.profiles button,.profiles button.active{border:0!important;padding:15px!important;border-radius:11px;background:transparent;box-shadow:none;min-height:60px}
+.profiles button span{font-size:22px;letter-spacing:-.6px;color:#9a85af;font-weight:500}
+.profiles button.active{background:white;box-shadow:0 3px 10px #50306b0a}
+.profiles button.active span{color:#6d28d9;font-weight:700}
+nav{background:transparent;border-bottom:1px solid #e6dbef;border-radius:0;padding:0;gap:30px;margin:24px 0 26px;justify-content:flex-start}
+nav button,nav button.active{flex:0 0 auto;background:transparent;border-radius:0;box-shadow:none;padding:13px 2px;font-size:12px;min-width:75px;color:#9a86aa}
+nav button.active{border-bottom:3px solid #7c3aed;color:#6d28d9;font-weight:700}
+.heading{margin:20px 0}.heading h2{font-size:27px;color:#352447;letter-spacing:-1px}
+.date{color:#9b87aa}.date input{border-color:#e4d9ef;background:#fff;border-radius:10px;color:#6d4b88}
+.modes{max-width:410px;background:#eee7f6;border:0;padding:4px;border-radius:11px;margin-bottom:14px;gap:3px}
+.modes button{color:#9b83af;font-size:11px;min-height:36px;border-radius:8px}.modes button.active{background:#7c3aed;color:white;box-shadow:0 3px 8px #7c3aed22}
+.small{color:#9b89a8}.session-slots{gap:10px;margin:22px 0 25px}
+.session-slot,.session-slot.filled{background:#fff;border:1px solid #e8dff0;border-radius:14px;padding:15px;min-height:96px;box-shadow:none;gap:12px}
+.session-slot.filled{border-bottom:3px solid #b28ce8}
+.session-slot strong{font-size:13px;color:#5b3c75;line-height:1.4;font-weight:600;min-height:0}
+.slot-top{font-size:8px!important;letter-spacing:1.2px!important;color:#baa6ca!important}
+.slot-action{display:none}.session-slot:hover{border-color:#9b6cde;box-shadow:0 4px 16px #6d28d90a}
+.grid{gap:20px}.card{border:1px solid #e8e0ef;border-top:1px solid #e8e0ef;border-radius:20px;padding:26px;box-shadow:0 4px 18px #39204703}
+.card .number{color:#b39cc4;letter-spacing:2px;font-size:8px;margin-bottom:16px}.card h3{font-size:23px;font-weight:600;color:#3b2850;letter-spacing:-.7px}
+.suggest{background:#f4effb;border:0;border-radius:12px;color:#7f6297;padding:17px;margin:20px 0;font-size:11px}
+.reference-label{color:#9b80b2;font-size:9px;text-transform:uppercase;letter-spacing:.8px}.reference-weight{font-size:31px;color:#6d28d9}.reference-weight small{font-size:12px}.reference-reps{color:#a38bb6}
+label{color:#8d759f;font-size:10px}input,select,textarea{background:#faf8fc;border-color:#e9e0f0;border-radius:10px;color:#49305f;min-height:48px}
+.card .primary{background:#7c3aed;color:#fff;border-radius:11px;min-height:46px;font-size:12px;box-shadow:none;margin-top:18px}
+.card .primary:hover{background:#6d28d9}.card>.small:last-child{font-size:9px;color:#b6a2c4;margin-bottom:0;margin-top:15px}
+.stat{border-color:#e6dcef;border-radius:17px;padding:21px}.stat:first-child{background:#f1e9fc;border-color:#e0cef7}.stat span{color:#a48bb6}.stat strong{color:#6d28d9}.tag{background:#f0e7fb;border:0;color:#9a77b5;padding:10px 14px}
+.row{border-color:#eee5f4;color:#694e80}.row small{color:#a48bb6}.row button{color:#8d65b6}
+.footer{margin-top:40px;padding:16px 0;border-color:#e6dbef;color:#ac97bd;font-size:10px;letter-spacing:.5px}
+dialog{border-radius:22px;background:#fdfbff;color:#3b2850}dialog::backdrop{background:#26133688;backdrop-filter:blur(4px)}dialog h2,dialog h3{color:#5b21b6}.quiet{border-color:#e5d9ef;color:#795394}.close{color:#795394}#toast{background:#4c1d95;color:white}
+@media(max-width:600px){.shell{padding:0 19px}header{height:83px}.brand img{width:43px;height:43px}.brand span{font-size:30px}.brand small{font-size:6px;letter-spacing:1.7px;margin-top:6px}header .quiet{font-size:10px;padding:8px 11px;min-height:36px}.club-hero{padding:27px 25px;border-radius:21px;margin:5px 0 24px;min-height:228px}.club-kicker{font-size:8px;letter-spacing:2px;margin-bottom:18px}.club-hero .compact-tagline{font-size:37px;letter-spacing:-1.7px}.club-hero p{font-size:10px;line-height:1.6;max-width:84%;margin-top:17px}.hero-umbrella{font-size:205px;right:-22px;top:-13px}.club-stamp{display:none}.profiles button,.profiles button.active{min-height:51px;padding:12px!important}.profiles button span{font-size:21px}nav{margin:19px 0 22px;padding:0;gap:26px}nav button{font-size:11px;min-height:44px}.heading h2{font-size:24px}.heading{gap:12px;flex-wrap:wrap}.modes{max-width:none}.modes button{min-height:38px}.session-slots{gap:9px;margin:19px 0 22px}.session-slot,.session-slot.filled{padding:12px;min-height:83px;border-radius:12px;gap:9px}.session-slot strong{font-size:12px;line-height:1.4}.slot-top{font-size:7px!important}.grid{gap:16px}.card{padding:22px;border-radius:18px}.card h3{font-size:22px}.suggest{margin:18px 0;padding:15px}.reference-weight{font-size:29px}.stats{gap:8px}.stat{padding:15px 10px}.stat strong{font-size:23px}.stat span{font-size:9px}.date input{font-size:12px}.footer{font-size:9px}.profile-caption{font-size:8px}}
+
+.chart polyline{stroke:#7c3aed}.chart circle{fill:#7c3aed}
